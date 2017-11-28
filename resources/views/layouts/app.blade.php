@@ -14,8 +14,6 @@
    <link rel="stylesheet" href="{{ URL::asset('css/reset.css') }}">
    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
    <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
-   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-   <link rel="stylesheet" href="{{ URL::asset('css/login.css') }}">
 
 </head>
 <body>
@@ -80,9 +78,9 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+
   </body>
 </html>

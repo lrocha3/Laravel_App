@@ -2,16 +2,20 @@
 
 @section('content')
 
+<link href="{{asset('/css/login.css') }}" rel="stylesheet">
+
+
+
 <div class="background_big">
       </div>
+
             <div class="vertical-center">
                 <div class="login-page">
 
-                <div class="form">
-
+                  <div class="form">
                   <h3>Almost there</h3>
 
-                    <form class="login-form" method="POST" action="{{ route('login') }}">
+                    <form class="login-form form-horizontal" method="POST" action="{{ route('login') }}" role="form">
                         {{ csrf_field() }}
 
 
@@ -27,15 +31,21 @@
                             </span>
                         @endif
 
-                                <div class="checkbox">
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                </div>
+                        <div class="my_check_box">
+                        <span>  Remember me
+                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
+                      </span>
+                      </div>
 
+                                <div class="login_button">
                                 <button><span>login</span></button>
+                              </div>
 
                                 <p>
-                                <a class="message" href="{{ route('password.request') }}">
+                                  <div class="message">
+                                <a href="{{ route('password.request') }}">
                                 Forgot Your Password? </a>
+                              </div>
                               </p>
 
 
